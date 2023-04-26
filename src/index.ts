@@ -11,10 +11,6 @@ app.use((req: Request, res: Response, next: NextFunction) => {
 
 app.use("/users", userRouter);
 
-// app.get("/user", (req, res) => {
-//   res.send({ success: true });
-// });
-
 app.get("/hello", (req: Request, res: Response) => {
   res.send("GET");
 });
